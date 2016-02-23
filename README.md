@@ -1,5 +1,7 @@
 # Yet another ES2015 boiler plate, this time for Node.js applications
 
+[![Build Status](https://travis-ci.org/conatus/node-es2015-boilerplate.svg?branch=master)](https://travis-ci.org/conatus/node-es2015-boilerplate)
+
 This is a yet another ES2015 boilerplate, this time specifically designed for writing server-side applications with Node.js.
 
 Everything Javascript related is configured in the `package.json`. I prefer this than 45 million files in the root of a new project. This includes building the project all managed with `npm` scripts rather than some independent runner.
