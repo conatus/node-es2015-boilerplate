@@ -1,4 +1,4 @@
-# Yet Another Node.js ES2015 boilerplate
+# Yet another ES2015 boiler plate, this time for Node.js applications
 
 This is a yet another ES2015 boilerplate, this time specifically designed for writing code server-side with Node.js.
 
