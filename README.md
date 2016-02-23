@@ -2,17 +2,17 @@
 
 This is a yet another ES2015 boilerplate, this time specifically designed for writing code server-side with Node.js.
 
-Everything Javascript related is configured in the `package.json`. I prefer this than 45 million files in the root of a new project. This includes building the project all managed with npm scripts rather than some independent runner.
+Everything Javascript related is configured in the `package.json`. I prefer this than 45 million files in the root of a new project. This includes building the project all managed with `npm` scripts rather than some independent runner.
 
 ## What You Get
 
 - Compilation from ES2015 to ES5 using [Babel](https://babeljs.io/) of course.
 - [ESLint](http://eslint.org/) with Airbnb's [popular configuration](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) as default. The configuration lines in `package.json` make sure that it works without deprecation messages in the very latest ESLint.
-- [ava](https://github.com/sindresorhus/ava) for testing with ES2015 support. A very fast parallel test runner with a minimalist approach.
-- [sinon](https://github.com/sinonjs/sinon) for mocking in tests. You'll pretty much always need this.
+- [ava](https://github.com/sindresorhus/ava) for testing with ES2015 support. A very fast parallel test runner with a minimalist approach that recalls [tape](https://github.com/substack/tape). I like `tape` because it doesn't throw loads of globals around and require an independent runner.
+- [sinon](https://github.com/sinonjs/sinon) for mocking in tests. You'll pretty much always need this pretty quickly.
 - [nyc](https://github.com/bcoe/nyc) for code coverage.
 - [Ramda](http://ramdajs.com/), a functional JS library which I use all the time.
-- A build on [Travis](https://travis-ci.org/).
+- A build on [Travis](https://travis-ci.org/) by default.
 
 ## What You Can Do
 
@@ -27,4 +27,4 @@ Everything Javascript related is configured in the `package.json`. I prefer this
 ## TODO
 
 - Make additional lines in the configuration of ESLint no longer required.
-- Use Cookie Cutter or something to make a new project generator using this template.
+- Use [Cookie Cutter](https://github.com/audreyr/cookiecutter) or something to make a new project generator using this template.
