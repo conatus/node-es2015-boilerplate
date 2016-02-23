@@ -6,6 +6,12 @@ This is a yet another ES2015 boilerplate, this time specifically designed for wr
 
 Everything Javascript related is configured in the `package.json`. I prefer this than 45 million files in the root of a new project. This includes building the project all managed with `npm` scripts rather than some independent runner.
 
+## Just Using It
+
+1. Clone the project with no history, blanking the README.md and getting you started prompting you for a name. Then it runs `npm init` to get you going with the project for real. `echo -n 'Project name: ' && read PROJECT && git clone --depth 1 git@github.com:conatus/node-es2015-boilerplate.git $PROJECT && cd $PROJECT && git commit --amend -m "Add boilerplate to begin $PROJECT" --date "`date`" && echo "# $PROJECT" > README.md && npm init`
+2. `npm install`
+3. Begin.
+
 ## What You Get
 
 - Compilation from ES2015 to ES5 using [Babel](https://babeljs.io/) of course.
