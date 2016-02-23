@@ -27,4 +27,12 @@ Everything Javascript related is configured in the `package.json`. I prefer this
 ## TODO
 
 - Make additional lines in the configuration of ESLint no longer required.
+- Some sort of documentation and type checker.
+  - I like minimalist functional style type signatures over JSDoc nightmares where the documentation can be longer than the code.
+  - You want to be able to understand the inputs and outputs in seconds and a well named function should describe what it is up to.
+  - [Rtype](https://github.com/ericelliott/rtype) and its library [rfx](https://github.com/ericelliott/rfx) does this with objects you embed into code. The advantage is this allows validation at runtime.
+  - [jsig](https://github.com/jsigbiz/spec) does much the same, but with comments as opposed to strings in code. No runtime checking.
+  - Naturally there is [talk of them merging](https://github.com/ericelliott/rtype/issues/47).
+  - Both are in developer preview but `jsig` edges it by being something simple I could just use and get on with my life. Just comments in a natural format.
+  - Facebook's [Flow](http://flowtype.org/) is also a thing. The disadvantage of Flow as well as something like TypeScript is you actually aren't writing functional Javascript anymore. Then again we got over this for using JSX in React so maybe it is fine. But it checks types for you which prevents coding mistakes as you are working.
 - Use [Cookie Cutter](https://github.com/audreyr/cookiecutter) or something to make a new project generator using this template.
